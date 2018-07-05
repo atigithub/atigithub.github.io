@@ -8,7 +8,7 @@
   <script  type="text/javascript" src="JS/simple.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 
-  <body>
+  <body onload="setTabs()">
   <header class="sans-serif">
   <div class="cover bg-center bg-center-l" style="background-image: url(Images/fundalweb.jpg)">
     <div class="bg-white-10 pb5 pb6-m pb7-l">
@@ -49,10 +49,13 @@
 		  	Receptie la terminarea lucrarilor / Cartea constructiei
 		  </h3>
 		</div>
-    <p>Asigurarea alcatuirii Comisiei de receptiela terminarea lucrarilor din specialisti in domeniu (ingineri constructori, ingineri instalatori)
-      </p>	
-		<p class="f6 lh-copy measure-wide">
-      <ul>
+     <p class="f6 lh-copy measure-wide">
+      Receptia la terminarea lucrarilor, precum si intocmirea Cartii constructiei se face in stricta concordanta cu
+      cu H.G. 273/1994 modificat si completat prin H.G. 343/2017. Aceasta activitate consta in principal din urmatoarele activitati:
+		  <ul>
+      <li class="f6 lh-copy measure-wide">
+      Asigurarea alcatuirii Comisiei de receptiela terminarea lucrarilor din specialisti in domeniu (ingineri constructori, ingineri instalatori)
+      </li>
       <li class="f6 lh-copy measure-wide"> 
       Efectuarea demersurilor prealabile catre Primaria emitenta a autorizatiei de construire/demolare si catre Inspectoratul Regional de Stat in Constructii.
       </li>
@@ -95,8 +98,11 @@
         </li>
         <li class="f6 lh-copy measure-wide">
         Trimiterea catre toti factorii implicati a documentelor receptiei finale.
-        </li>
+      </li>
       </ul> 
+        <br>
+        <br>
+        <br>
     </p>
     </div>
     
@@ -132,13 +138,13 @@
 </article>
 
 <div id="legislatie" class="pa4-l bg-white mt3 mh5 shadow-1 br2 overflow-hidden flex">
-  <div class="f5 br bw1 b--black-10 flex flex-column w-20">
-    <a class="ttc db link pv3 ph4 black" href="javascript:;">Legea 10 / 1995</a>
-    <a class="ttc db link pv3 ph4 black b--blue-ati b br bw2" href="javascript:;">Obligatii si raspunderi ale investitorilor</a>
-    <a class="ttc db link pv3 ph4 black" href="javascript:;">P 130 / 1999</a>
-    <a class="ttc db link pv3 ph4 black" href="javascript:;">HG. 273 / 1994</a>
+  <div class="tabs f5 br bw1 b--black-10 flex flex-column w-20">
+    <a id="firstItem" class="tablinks ttc db link pv3 ph4 black" onclick="openTabs(event, 'Tab1')">Legea 10 / 1995</a>
+    <a class="tablinks db link pv3 ph4 black" onclick="openTabs(event, 'Tab2')">Obligatii si raspunderi ale investitorilor</a>
+    <a class="tablinks ttc db link pv3 ph4 black" onclick="openTabs(event, 'Tab3')">P 130 / 1999</a>
+    <a class="tablinks ttc db link pv3 ph4 black" onclick="openTabs(event, 'Tab4')">HG. 273 / 1994</a>
   </div>
-  <div class="flex-auto w-80 ph3 f6">
+  <div id="Tab2" class="tabcontent sflex-auto w-80 ph3 f6">
     <p class="lh-copy">Art. 22. -   Investitorii sunt persoane fizice sau juridice care finanţează şi realizează investiţii sau intervenţii la construcţiile existente în sensul legii şi au următoarele obligaţii principale referitoare la calitatea construcţiilor:     
    a) stabilirea nivelului calitativ ce trebuie realizat prin proiectare şi execuţie pe baza reglementărilor tehnice, precum şi a studiilor şi cercetărilor efectuate;    
    b) obţinerea acordurilor şi a avizelor prevăzute de lege, precum şi a autorizaţiei de construire;
@@ -150,8 +156,20 @@
    h) expertizarea construcţiilor de către experţi tehnici atestaţi, în situaţiile în care la aceste construcţii se execută lucrări de natura celor prevăzute la art. 18 alin. (2) al prezentei legi.  
 </p>
   </div>
-</div>
+<div id="Tab1" class="tabcontent flex-auto w-80 ph3 f6">
+    <p class="lh-copy">Alt copy 1
+</p>
+  </div>
+<div id="Tab3" class="tabcontent flex-auto w-80 ph3 f6">
+    <p class="lh-copy">Alt copy 3
+</p>
+  </div>
+<div id="Tab4" class="tabcontent flex-auto w-80 ph3 f6">
+    <p class="lh-copy">Alt copy 4 
+</p>
+  </div>
 
+</div>
 <div class="pt3"></div>
 
 <article class="mt3 cf ph3 ph5-ns pv5 bg-near-white">
@@ -166,36 +184,40 @@
   </header>
   <div class="fn fl-ns w-50-ns">
   <ul>
-      <li class="lh-copy measure mt4 mt0-ns">
+    <li class="lh-copy measure">
+        Dirigentie de santier 
+    </li>
+    <li class="lh-copy measure">
+        Management de proiect 
+    </li>
+    <li class="lh-copy measure mt4 mt0-ns">
       Intocmirea certificatelor energetice – prin specialist autorizat
-      </li>
-      <li class="lh-copy measure">
-  	Lucrari specific de cadastru (dezmembrari, intabulari in cartea funciara)
-      </li>
+    </li>
+    <li class="lh-copy measure">
+  	 Lucrari specific de cadastru (dezmembrari, intabulari in cartea funciara)
+    </li>
   	<li class="lh-copy measure">
-  	    Dirigentie de santier 
+  	 Evaluare imobiliara – prin evaluator ANEVAR
   	</li>
   	<li class="lh-copy measure">
-  	Evaluare imobiliara – prin evaluator ANEVAR
-  	</li>
-  	<li class="lh-copy measure">
-  	Expertizarea tehnica a cladirilor prin experti atestati.
+  	 Expertizarea tehnica a cladirilor prin experti atestati.
   	</li>
   </ul>
   </div>
 </article>
 
 
-<article id="echipa" class="cf pa3 mw9 bg-white center">
-  <header class="fl w-100 w-50-l pa3-m pa4-l ">
-    <h2 class="lh-title f3 b mt0">
-      Din asociatie fac parte</h2>
+<article id="echipa" class="cf ph3 pv1 mw9 bg-white center">
+  <header class="fl w-75 w-100-l pa3-m pa4-l ">
+    <h2 class="lh-title f4 b mt4">
+      Din asociatie fac parte: ingineri constructori, ingineri instalatori, diriginti de santier, responsabili
+      tehnici cu executia, experti tehnici</h2> 
   </header>
-</article>
-
-
+<article>
+ 
+  <h3 class="lh-title f4 pt4 b ph5">Persoane de contact</h3>
 	<div class="dt-ns dt--fixed-ns">
-		<div class="dtc-ns tc pv4 bg-white-10">
+		<div class="dtc-ns tc pv2 bg-white-10">
 	  <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
 	  <div class="tc">
 	  	<img src="Images/logoATI.png" class="br-100 h3 w3 dib" title="Photo of a kitty staring at you">
