@@ -1,10 +1,3 @@
-/*
-(function(){
-  console.log('Hello World!');
-  document.getElementById("Tab1").style.display = "block";
-})();
-*/
-
 function setTabs () {
 
 	document.getElementById("Tab1").style.display = "block";
@@ -21,8 +14,10 @@ function scrollToX (param) {
 
 function openTabs(evt, tabName) {
     // Declare all variables
+    console.log("ceva");
     var i, tabcontent, tablinks;
-
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    console.log(width);
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
